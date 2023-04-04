@@ -1,0 +1,75 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.footer_logo{
+    background-color: var(--mainColorLight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+   background-color: var(--mainColor);
+   padding: 50px 0;
+
+}
+.footer_container{
+   max-width: 1170px;
+   margin: auto;
+}
+ 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 20%;
+    padding: 0 10px;
+
+}
+.footer-col h4{
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+
+}
+
+.footer-col a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+}
+.footer-col a:hover{
+    color: white;
+    padding-left: 6px;
+}
+ .footer_icon_follow{
+    margin-top: 105px;
+}
+.footer-col .social_icons{
+    display: flex;
+    gap: 6px;
+}
+@media(max-width:767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+
+    }
+}
+@media(max-width:567px){
+    .footer{
+        padding: 50px 30%;
+
+    }
+    .footer-col{
+        width: 100%;
+ 
+    }
+}
+
