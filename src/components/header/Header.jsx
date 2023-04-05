@@ -16,7 +16,7 @@ function Header() {
   
     <div className='header__content'>
       <div className='header__logo'>
-          <img src={Logo} alt="logo" />
+          <img src={Logo} alt="logo" className='header__heart-img' />
       </div>
       <div className='header__search'>
         <img src={search} alt="search" className='searchIcon '/>
