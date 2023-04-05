@@ -20,7 +20,7 @@ function Header() {
       </div>
       <div className='header__search'>
         <img src={search} alt="search" className='searchIcon '/>
-        <input placeholder="Search" className='search__input' />
+        <input placeholder="Search" className='search__input'  />
       </div>
       <div className='header__enter'>
       <div className='header__login'>
