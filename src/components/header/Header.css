@@ -57,7 +57,7 @@
 
 .header__login a {
   color: black;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 
@@ -80,14 +80,16 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(246, 163, 21, 0.8);
   box-shadow: 0px 0px 10px #D38724;
   border-radius: 20px 0px;
-  font-size: 20px;
+  font-size: 18px;
   border: none;
 }
 .header__signUp-button a{
   color: black;
 }
 
-
+.header__heart-img{
+  width: 22px;
+}
 .header__end {
   display: flex;
   gap: 20px;
@@ -96,6 +98,14 @@
 .lang__select{
   background: transparent;
   border: 0;
+}
+option{
+  background: gray;
+  width: 117px;
+  border: 0;
+  text-transform: uppercase;
+  width: 200px;
+
 }
 
 @media(max-width:767px){
