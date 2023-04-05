@@ -126,6 +126,7 @@ li {
 }
 
 @media(max-width:991px) {
+  
   .header__navbar__menus {
     width: 20%;
   }
@@ -194,6 +195,5 @@ li {
     left: 0;
     right: 0;
   }
-
 
 }
