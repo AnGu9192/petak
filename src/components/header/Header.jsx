@@ -16,7 +16,7 @@ function Header() {
   
     <div className='header__content'>
       <div className='header__logo'>
-          <img src={Logo} alt="logo" className='header__heart-img' />
+          <img src={Logo} alt="logo" />
       </div>
       <div className='header__search'>
         <img src={search} alt="search" className='searchIcon '/>
@@ -35,7 +35,7 @@ function Header() {
         <img src={person} alt="person" />
       </div>
       <div className='header__heart'>
-        <img src={vectorHearth} alt="" />
+        <img src={vectorHearth} alt="" className='header__heart-img' />
       </div>
       <div className='header__lang'> 
         <select className='lang__select' onChange={() =>{
