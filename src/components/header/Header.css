@@ -23,26 +23,30 @@
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.06);
   border: none;
   border-radius: 6px;
+  background: rgba(217, 217, 217, 0.7);
+
   box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
 }
 
 .header__search input {
   flex:1;
   height: 40px;
-  width: 450px;
+  width: 430px;
+  margin-left: 40px;
   border: none;
+  outline: none;
   background: rgba(217, 217, 217, 0.7);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.06);
 }
 
 .header__search input {
-  text-indent: 52px;
+  text-indent: 2px;
 }
 
 .header__search .searchIcon {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 8px;
+  left: 0px;
 }
 
 .header__search .searchIcon {
