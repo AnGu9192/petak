@@ -1,22 +1,30 @@
 import React from "react";
+import { motion } from 'framer-motion';
 
-function SliderContent({ activeIndex, imageSlider }) {
+function SliderContent({ activeIndex, imageSlider}) {
   return (
     <section>
-      <div>
+      <motion.div
+         drag='x'
+         dragConstraints={{right:0}}
+         draggable='true'
+         
+         >
       {imageSlider.map((slide, index) => (
-        <div
-        
+        <motion.div
           key={index}
           className={index === activeIndex ? "slides active" : "inactive"}
         >
+          <motion.div>
           <img className="slide-image" src={slide.urls} alt={slide.title} />
           
           <h2 className="slide-title">{slide.title}</h2>
           <button className="slide-button">{slide.buttontext}</button>
-        </div>
+          </motion.div>
+         
+        </motion.div>
       ))}
-      </div>
+      </motion.div>
      
     </section>
   );
