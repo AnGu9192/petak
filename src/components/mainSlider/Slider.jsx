@@ -3,7 +3,7 @@ import SliderContent from "./SliderContent";
 import Dots from "./Dots";
 import "./SliderContent.css";
 import imageSlider from "./imageSlider";
-
+import {motion} from 'framer-motion'
 
 function Slider(props) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -15,18 +15,19 @@ function Slider(props) {
     }, 5000);
     return () => clearInterval(interval);
 }, [activeIndex]); 
-
+  
   return (
-  <div className="slider-container">
+  <motion.div className="slider-container">
 
     <SliderContent activeIndex={activeIndex} imageSlider={imageSlider} />
+  
     
-      <Dots
+     <Dots
         activeIndex={activeIndex}
         imageSlider={imageSlider}
         onclick={(activeIndex) => setActiveIndex(activeIndex)}
-      /> 
-    </div>
+      />  
+    </motion.div>
   );
 }
 
