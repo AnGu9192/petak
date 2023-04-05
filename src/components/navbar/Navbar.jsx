@@ -28,11 +28,10 @@ const Navbar = () => {
 
   let boxClassSubMenu = ["sub__menus"];
   if (isMenuSubMenu) {
-    boxClass.push("sub__menus__Active");
+    boxClassSubMenu.push("sub__menus__Active");
   } else {
-    boxClass.push("");
+    boxClassSubMenu.push("");
   }
-
   return (
     <header className="header__navbar">
       <div className="container">
@@ -64,7 +63,7 @@ const Navbar = () => {
               )}
 
               <ul className={boxClass.join(" ")}>
-                <li
+              <li
                   onClick={toggleSubmenu}
                   className="menu-item sub__menus__arrows"
                 >
@@ -75,12 +74,23 @@ const Navbar = () => {
                   </Link>
                   <ul className={boxClassSubMenu.join(" ")}>
                     <li>
+        
                       <NavLink
                         onClick={toggleClass}
-                         activeClassName="is-active"
-                         to={`/Aaaa`}
+                        activeclassname="is-active"
+                        to={`/Aaaa`}
                       >
+
                         Aaaa
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        onClick={toggleClass}
+                        activeclassname="is-active"
+                        to={`/Bbbb`}
+                      >
+                        Bbbb
                       </NavLink>
                     </li>
                   </ul>
