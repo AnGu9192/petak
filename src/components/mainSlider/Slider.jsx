@@ -3,7 +3,6 @@ import SliderContent from "./SliderContent";
 import Dots from "./Dots";
 import "./SliderContent.css";
 import imageSlider from "./imageSlider";
-import {motion} from 'framer-motion'
 
 function Slider(props) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -17,7 +16,7 @@ function Slider(props) {
 }, [activeIndex]); 
   
   return (
-  <motion.div className="slider-container">
+  <div className="slider-container">
 
     <SliderContent activeIndex={activeIndex} imageSlider={imageSlider} />
   
@@ -27,7 +26,7 @@ function Slider(props) {
         imageSlider={imageSlider}
         onclick={(activeIndex) => setActiveIndex(activeIndex)}
       />  
-    </motion.div>
+    </div>
   );
 }
 
