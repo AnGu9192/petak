@@ -11,8 +11,8 @@
 }
 
 
-.is-active {
-  color: #ff5800 !important;
+.active-link {
+  color: var(--secondaryColor) !important;
 }
 
 
