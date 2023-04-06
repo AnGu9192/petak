@@ -17,7 +17,7 @@
 }
 
 .header__search {
-  width: 450px;
+  width: 470px;
   height: 42px;
 
   border: none;
@@ -29,12 +29,11 @@
 .header__search input {
   flex:1;
   height: 40px;
-  width: 410px;
+  width: 430px;
   margin-left: 40px;
   border: none;
   outline: none;
   background: rgba(217, 217, 217, 0.7);
-  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
 }
 
 .header__search input {
