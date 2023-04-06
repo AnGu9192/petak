@@ -6,6 +6,7 @@ import {AiOutlineClose} from "react-icons/ai"
 import './Navbar.css'
 
 const Navbar = () => {
+  const setActive =({isActive}) => isActive ? 'active-link' : ''
   const [isMenu, setisMenu] = useState(false);
   const [isResponsiveclose, setResponsiveclose] = useState(false);
   const toggleClass = () => {
@@ -77,7 +78,7 @@ const Navbar = () => {
         
                       <NavLink
                         onClick={toggleClass}
-                        activeclassname="is-active"
+                        className={setActive}
                         to={`/Aaaa`}
                       >
 
@@ -87,7 +88,7 @@ const Navbar = () => {
                     <li>
                       <NavLink
                         onClick={toggleClass}
-                        activeclassname="is-active"
+                        className={setActive}
                         to={`/Bbbb`}
                       >
                         Bbbb
@@ -97,8 +98,8 @@ const Navbar = () => {
                 </li>
                 <li className="menu-item menu-first">
                   <NavLink
-                    activeClassName="is-active"
-                    onClick={toggleClass}
+                     className={setActive}
+                     onClick={toggleClass}
                     to={`/`}
                   >
                     Jobs
@@ -107,8 +108,8 @@ const Navbar = () => {
                 <li className="menu-item ">
                   <NavLink
                     onClick={toggleClass}
-                     activeClassName="is-active"
-                     to={`/Service`}
+                    className={setActive}
+                    to={`/Service`}
                   >
 
                     Service
@@ -118,7 +119,7 @@ const Navbar = () => {
                 <li className="menu-item ">
                   <NavLink
                     onClick={toggleClass}
-                     activeClassName="is-active"
+                    className={setActive}
                     to={`/RealEstate`}
                   >
               
@@ -128,8 +129,8 @@ const Navbar = () => {
                 <li className="menu-item ">
                   <NavLink
                     onClick={toggleClass}                    
-                    activeClassName="is-active"
-                     to={`/Electronics`}
+                    className={setActive}
+                    to={`/Electronics`}
                   >
                 
                     Electronics
@@ -138,7 +139,7 @@ const Navbar = () => {
                 <li className="menu-item ">
                   <NavLink
                     onClick={toggleClass}
-                    activeClassName="is-active"
+                    className={setActive}
                     to={`/ClothingFashion`}
                   >
                     Cloting and Fashion
@@ -147,8 +148,8 @@ const Navbar = () => {
                 <li className="menu-item ">
                   <NavLink
                     onClick={toggleClass}                    
-                     activeClassName="is-active"
-                     to={`/HomeGarden`}
+                    className={setActive}
+                    to={`/HomeGarden`}
                   > 
                     Home and Garden
                   </NavLink>
