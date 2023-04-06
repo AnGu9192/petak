@@ -33,7 +33,7 @@
   margin-left: 40px;
   border: none;
   outline: none;
-  background: rgba(217, 217, 217, 0.7);
+  background: transparent;
 }
 
 .header__search input {
