@@ -5,8 +5,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 60px;
 }
-
+.footer_vector{
+    width: 130px;
+}
 .footer{
    background-color: var(--mainColor);
    padding: 50px 0;
