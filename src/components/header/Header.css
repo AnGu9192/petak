@@ -121,10 +121,10 @@ option{
     height: 100%;
   
   }
- .header__search{
-  width: 100%;
-
+  .header__search input{
+    width: 100%;
   }
+}
 
 }
 
