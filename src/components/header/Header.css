@@ -124,7 +124,9 @@ option{
   .header__search input{
     width: 100%;
   }
-}
+ .header__search input{
+    width: 100%;
+  }
 
 }
 
