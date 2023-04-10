@@ -7,6 +7,7 @@ import arrowLang from '../../assets/arrowLang.png'
 import search from '../../assets/search.png'
 import {FiChevronDown } from "react-icons/fi";
 import {AiOutlineHeart} from "react-icons/ai"
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -24,10 +25,11 @@ function Header() {
       </div>
       <div className='header__enter'>
       <div className='header__login'>
-       <button className='header__login-button'><a href="#">Log In</a></button>
+       <button className='header__login-button'><NavLink to="/LogIn">Log In</NavLink></button>
       </div>
-      <div className='header__signUp active'>
-       <button className='header__signUp-button'><a href="#">SignUp</a></button>
+      <div className='header__signUp'>
+      <button className='header__signUp-button'><NavLink to="/SignUp">SignUp</NavLink></button>
+
       </div>
       </div>
    <div className='header__end'>

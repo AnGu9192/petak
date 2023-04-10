@@ -1,9 +1,14 @@
 import React, { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
-import "./Useform.css";
+import "./../styles/Useform.css";
+import facebook from './../../assets/face-icon.png';
+import google from './../../assets/google-icon.png';
+import Logo from '../../assets/logo.png'
 
-export default function Useform() {
+
+
+export default function SignUp() {
   const [successMsg, setSuccessMsg] = useState("");
   const {
     register,
@@ -37,12 +42,16 @@ const password = watch('password')
   };
 
   return (
+
     <div className="form-container">
-      <form onSubmit={handleSubmit(onSubmit)} className="useForm__header">
+      <div className="useform__header-logo"><img src={Logo} alt={Logo} /></div>
+
+      <form onSubmit={handleSubmit(onSubmit)} className="useform__header">
         <div className="form-title">
           <h1>Welcome</h1>
           <p>Sign Up</p>
         </div>
+        <div className="form-control__text">
         {successMsg && <p className="success-msg">{successMsg}</p>}
         <div className="form-control">
           <label>First Name</label>
@@ -138,12 +147,20 @@ const password = watch('password')
 
         <div className="form-control">
           <label></label>
-          <button type="submit">Sign Up</button>
+          <button type="submit" className="signup">Sign Up</button>
+        </div>
         </div>
 
-        
       </form>
-     
+      <div className="line__text">
+        <h2 className="continue">or continue with</h2>
+      </div>
+
+    <div className="signup__footer">
+        <div className="signup__footer-left"><a href=""><img src={facebook} alt={facebook} /></a></div>
+        <div className="signup__footer-right"><a href=""><img src={google} alt={google} /></a></div>
+    </div>
+    <div>Don’t have an account yet? Sign Up for free</div>
     </div>
   );
 }

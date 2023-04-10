@@ -1,9 +1,14 @@
 import React, { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
-import "./Useform.css";
+import "./../styles/Useform.css";
+import facebook from './../../assets/face-icon.png';
+import google from './../../assets/google-icon.png';
+import Logo from '../../assets/logo.png'
 
-export default function Useform() {
+
+
+export default function LogIn() {
   const [successMsg, setSuccessMsg] = useState("");
   const {
     register,
@@ -37,26 +42,18 @@ const password = watch('password')
   };
 
   return (
+
     <div className="form-container">
-      <form onSubmit={handleSubmit(onSubmit)} className="useForm__header">
+      <div className="useform__header-logo_login"><img src={Logo} alt={Logo} /></div>
+
+      <form onSubmit={handleSubmit(onSubmit)} className="useform__header">
         <div className="form-title">
-          <h1>Welcome</h1>
-          <p>Sign Up</p>
+          <h1>Welcome Back</h1>
+          <p>Log In</p>
         </div>
+        <div className="form-control__text">
         {successMsg && <p className="success-msg">{successMsg}</p>}
-        <div className="form-control">
-          <label>First Name</label>
-          <input
-            type="text"
-            {...register("username", {
-              required: "First name is required.",
-            })}
-            placeholder="Type your first name "
-          />
-          {errors.username && (
-            <p className="errorMsg">{errors.username.message}</p>
-          )}
-        </div>
+        
         <div className="form-control">
           <label>Email</label>
           <input
@@ -102,48 +99,23 @@ const password = watch('password')
           </div>
         </div>
           
-        <div className="form-control">
-        <label>Confirm Password</label>
-            <input
-              type={confirmPasswordEye === false ? "password" : "text"}
-              placeholder="Confirm"
-              onPaste={(e) => {
-                e.preventDefault();
-                return false;
-              }}
-              className={`w-full h-14 rounded-lg ${
-                errors.confirmPassword &&
-                "focus:border-red-500 focus:ring-red-500 border-red-500"
-              } `}
-              {...register("confirmPassword", {
-                required: "Confirm password is required",
-                validate: (value) =>
-                  value === password || "Sorry, passwords do NOT match.",
-              })}
-            />
-            {errors.confirmPassword && (
-              <span className="errorMsg">
-                {errors.confirmPassword.message}
-              </span>
-            )}
-
-            <div className="eye-confirm">
-              {passwordEye === false ? (
-                <AiFillEyeInvisible onClick={handleConfirmPasswordClick} />
-              ) : (
-                <AiFillEye onClick={handleConfirmPasswordClick} />
-              )}
-            </div>
-          </div>
-
+      
         <div className="form-control">
           <label></label>
-          <button type="submit">Sign Up</button>
+          <button type="submit" className="signup">Log In</button>
+        </div>
         </div>
 
-        
       </form>
-     
+      <div className="line__text">
+        <h2 className="continue">or continue with</h2>
+      </div>
+
+    <div className="signup__footer">
+        <div className="signup__footer-left"><a href=""><img src={facebook} alt={facebook} /></a></div>
+        <div className="signup__footer-right"><a href=""><img src={google} alt={google} /></a></div>
+    </div>
+    <div>Don’t have an account yet? Sign Up for free</div>
     </div>
   );
 }

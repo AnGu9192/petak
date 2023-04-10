@@ -17,6 +17,8 @@ import ClotingFashion from './components/pages/ClotingFashion';
 import HomeGarden from './components/pages/HomeGarden';
 
 import Footer from './components/footer/Footer'; 
+import LogIn from './components/pages/LogIn';
+import SignUp from './components/pages/SignUp';
 
 
 
@@ -24,8 +26,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
         <Router>
+        <Header />
+
         <Navbar/>    
         <Routes>        
           <Route path="/AllCategories" element={<AllCategories />}/>
@@ -37,6 +40,9 @@ function App() {
           <Route path="/Electronics" element={<Electronics />}/>
           <Route path="/HomeGarden" element={<HomeGarden/>}/>
           <Route path="/ClotingFashion" element={<ClotingFashion />}/>
+          <Route path="/LogIn" element={<LogIn />}/>
+          <Route path="/SignUp" element={<SignUp />}/>
+
         </Routes>
     
       </Router>  

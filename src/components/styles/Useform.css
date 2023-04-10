@@ -1,0 +1,192 @@
+
+ .form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+  background-color: #fff;
+  width: 80%;
+  } 
+.useform__header-logo img{
+  position: absolute;
+  left: 60px;
+  margin-top: 5px;
+}
+.useform__header-logo_login img{
+  position: absolute;
+  right: 150px;
+  margin-top: 70px;
+}
+  .form-title{
+    font-family: 'Sen';
+    margin-top: 30px;
+  }
+  .form-title h1{
+    font-family: 'Sen';
+    font-size: 54px;
+  }
+  .form-title p{
+    margin-top: 81px;
+    font-size: 100px;
+    line-height: 53px;
+  }
+  .errorMsg {
+    max-width: 350px;
+    color: #FF0000;
+    padding: 2px 0;
+    margin-top: 2px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .success-msg {
+    color: #7ca936;
+  }
+  .form-control__text{
+    margin-top: 80px;
+  }
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .form-control label {
+    width: 30%;
+    padding-right: 20px;
+    margin-bottom: 12px;
+
+  }
+  
+  .form-control input[type="text"],
+  .form-control input[type="password"] {
+    max-width: 850px;
+    height: 30px;
+    padding: 15px;
+
+  }
+ 
+  .eye-password,.eye-confirm{
+    position: absolute;
+    top: 40px;
+    right: 64px;
+  }
+ 
+  .signup {
+    width: 850px;
+    padding: 15px;
+    font-size: 32px;
+    background: #f7a212;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+
+  }
+
+
+  .continue {
+    text-align: center;
+  }
+  
+  .continue:before,
+  .continue:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+  
+  .continue:before {
+    right: 50px;
+    margin-left: -50%;
+  }
+  
+  .continue:after {
+    left: 50px;
+    margin-right: -50%;
+  }
+ .signup__footer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+ }
+ .signup__footer-left,  .signup__footer-right{
+  width: 300px;
+  height: 100px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  opacity: 0.4;
+ margin-bottom: 50px;
+
+ }
+ .signup__footer img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  }
+  @media screen and (max-width: 1244px) {
+    .form-container{
+      width: 80%;
+    }
+    .form-control{
+      width: 100%;
+      align-items: center;
+    }
+    .form-control button{
+      width: 100%;
+
+    }
+    .eye-password{
+      top: 40px;
+      right: 70px;
+    }
+    .eye-confirm{
+      top: 60px;
+      right: 70px;
+    }
+    .line__text{
+      display: none;
+    }
+  }
+ 
+@media screen and (max-width: 988px){
+  .form-container {
+    width: 50%;
+    
+  }
+}
+   @media screen and (max-width: 620px) {
+    .errorMsg {
+      max-width: 100%;
+    }
+  
+    .form-control {
+      flex-direction: column;
+    }
+  
+    .form-control input[type="text"],
+    .form-control input[type="password"] {
+      width: inherit;
+      width: 100%;
+
+    }
+    .signup__footer{
+    }
+  } 
+
+  @media screen and (max-width: 520px) {
+
+    .form-title h1{
+     font-size: 32px;
+    }
+    .form-title p{
+    font-size: 70px;
+    }
+  } 
