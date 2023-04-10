@@ -160,7 +160,7 @@ const password = watch('password')
         <div className="signup__footer-left"><a href=""><img src={facebook} alt={facebook} /></a></div>
         <div className="signup__footer-right"><a href=""><img src={google} alt={google} /></a></div>
     </div>
-    <div>Don’t have an account yet? Sign Up for free</div>
+    <div>Don’t have an account yet?<a href="#" className="signup__link">Sign Up for free</a> </div>
     </div>
   );
 }
