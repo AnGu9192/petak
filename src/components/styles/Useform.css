@@ -131,6 +131,11 @@
   margin-right: auto;
   margin-top: 20px;
   }
+  .signup__link{
+    list-style-type: none;
+    text-decoration: none;
+    color: #F7A212;
+  }
   @media screen and (max-width: 1244px) {
     .form-container{
       width: 90%;
