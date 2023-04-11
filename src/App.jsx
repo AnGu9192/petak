@@ -21,6 +21,7 @@ import SignUp from "./components/pages/SignUp";
 function App() {
   return (
     <div className="App">
+      <Router>
         <Header />
         <Navbar />
         <Routes>
@@ -37,6 +38,7 @@ function App() {
           <Route path="/SignUp" element={<SignUp />} />
         </Routes>
       <Footer />
+      </Router>
     </div>
   );
 }
